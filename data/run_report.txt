@@ -1,0 +1,97 @@
+RUN REPORT
+total_threads: 1000
+kept: 301
+dropped: 699
+dropped_by_reason:
+  rental_or_sale_ad: 333
+  no_housing_word: 236
+  plot_land_or_villa_only: 98
+  duplicate_title: 20
+  off_topic: 8
+  outside_hyderabad: 4
+20_random_dropped_titles:
+  - 4bhk flat for sale in Mokila ready to occupy 1.7 cr
+  - Auro Regent landlord flat for sale
+  - Investor flat for sale - 3bhk 1720sft Rajapushpa Imperia West facing courtyard view apartment
+  - How would this impact the high-rise gated communities?
+  - [Looking for Rent] 2 BHK in Manikonda / Puppalguda / Narsingi / Miyapur (Nov 1st, 2026) | Strict Budget: ₹25k–₹35k
+  - Ready to Move in...Candeur Crescent, LLingampally
+  - Looking to Buy DTCP/HMDA-Approved Plot Near Bahadurguda, Nagaram or Shamshabad – Current Price per Sq. Yard?
+  - DSR Altitudes 2277sft East Facing
+  - Levonor Egeria
+  - 🏠 ROOMMATE WANTED – RAMKY TOWERS, GACHIBOWLI
+  - 🏡 PRESTIGE HIGH FIELDS – 3 BHK FULLY FURNISHED
+  - GUESS THIS ROAD LEADS TO!!!!!
+  - PLOT FOR SALE – MEERPET
+  - GUESS THIS VILLA COMMUNITY!!!!!
+  - 2BHK GATED COMMUNITY FOR SALE
+  - IRA M3 project delay
+  - Newly constructed 3BHK Flat for Sale in Hitech-city Madhapur, with all amenities like clubhouse nearby Yashoda Hospitals
+  - Buy before 6th sep and save upto 60L in EOI phase
+  - Resale CANDEUR CRESCENT 2064SFT
+  - Thinking of buying a flat in Trishala Trilok – looking for feedback
+rows_per_topic:
+  Price: 45
+  Builder trust: 43
+  Area measurement: 41
+  Other: 38
+  Location and commute: 35
+  Possession delay: 23
+  Resale: 19
+  Loan: 17
+  Charges: 12
+  Legal and documents: 10
+  Rental yield: 9
+  Waterlogging and traffic: 6
+  Schools and hospitals: 3
+pct_empty_persona: 60.8
+pct_empty_stage: 62.8
+pct_Other_topic: 12.6
+llm_calls: 6
+cache_hits: 301
+synth_fills: 0
+llm_failures: 0
+quote_failures: 143
+check_by_reason:
+  llm quote failed: 143
+  new persona: 36
+  rules vs llm: 29
+  promo: 20
+  sample: 6
+blind_sample_agreement_pct:
+  topic: 16.7
+  persona: 16.7
+  stage: 100.0
+  area: 66.7
+  promo: 100.0
+blind_sample_n: 6
+top_10_new_personas:
+  Seller: 5
+  Homebuyer: 4
+  Buyer: 3
+  Developer: 3
+  Homeowner: 3
+  Builder: 2
+  Agricultural enthusiast: 1
+  Concerned buyer: 1
+  Data enthusiast: 1
+  Family person: 1
+top_10_new_topics:
+  Other: 4
+  Project details: 2
+  Commercial property investments: 1
+  Deep cleaning services: 1
+  Project discussion: 1
+  Promo: 1
+  Selling Strategy: 1
+top_10_new_areas:
+  Kollur: 7
+  Aparna Zenon: 2
+  Aparna Zenon, L Block: 2
+  Tukkuguda: 2
+  46 floor gated community: 1
+  AOS: 1
+  Abode MJ Lakeview Heights: 1
+  Ameenpur Lake: 1
+  Anuhar Towers: 1
+  Aparna: 1

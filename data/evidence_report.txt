@@ -1,0 +1,20 @@
+EVIDENCE RUN REPORT
+total_evidence: 183
+by_source:
+  autocomplete: 50
+  paa: 50
+  pasf: 50
+  reddit: 19
+  portal_faq: 11
+  trends: 3
+clusters: 6
+llm_calls: 2
+cache_hits: 178
+synth_fills: 0
+llm_failures: 0
+reddit_kept: 19
+reddit_dropped: 31
+trends_area_counts:
+  Gachibowli: 1
+  Narsingi: 1
+  Kokapet: 1

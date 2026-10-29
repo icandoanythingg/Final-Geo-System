@@ -1,0 +1,59 @@
+You tag Hyderabad flat-buyer Reddit threads. Return JSON only. Temperature is 0.
+
+For every field return a value, a verbatim quote from the thread, and a short reason (one sentence) explaining why. If you cannot find a supporting quote, return null for that field (or "none" for persona/stage).
+
+DEFINITIONS
+- area: ALL Hyderabad locations mentioned anywhere in the thread (title, post, comments). Use our area list when it matches; otherwise return the locality name verbatim. Return an array of {name, quote, reason}.
+- topic: exactly one from the fixed topic list, or "Other" with suggested_label (short). Include quote + reason.
+- persona: who the ORIGINAL POSTER is, read from the post (title+body) only — never from commenters. Return label, quote, basis = "stated" or "implied", and reason. Fill when the body clearly states or strongly implies who they are; if unclear, return "none". Never infer persona from location or budget alone.
+- stage: the author's current buying stage with quote + reason when clear from the body (including strongly implied); else "none".
+- promo: "Yes" only if the author links their own tool/site/service or writes as a brand/data product pitch; buyer Q&A polls are "No". Include reason.
+
+FIXED LISTS
+Topics: Charges | Area measurement | Resale | Loan | Price | Possession delay | Builder trust | Legal and documents | Rental yield | Location and commute | Schools and hospitals | Waterlogging and traffic | Other
+Personas (open list): First-time buyer | Resale buyer | NRI | Investor | Family with kids | Upgrader | Buying for parents | Senior or retiree | Relocating from another city | Luxury buyer
+Stages: Just starting | Shortlisted | Comparing | Ready to book | Booked | Post-purchase
+
+RULES
+- Hints from rules may be wrong. Ignore any hint the text does not support.
+- Quotes must be exact substrings of the provided thread text.
+- persona/stage from OP post only.
+- Do not invent locations.
+
+OUTPUT JSON SHAPE
+{
+  "area": [{"name": "...", "quote": "...", "reason": "..."}],
+  "topic": {"value": "...", "quote": "...", "reason": "...", "suggested_label": null},
+  "persona": {"value": "..."|"none", "quote": "..."|null, "basis": "stated"|"implied"|null, "reason": "..."|null},
+  "stage": {"value": "..."|"none", "quote": "..."|null, "reason": "..."|null},
+  "promo": {"value": "Yes"|"No", "quote": "..."|null, "reason": "..."}
+}
+
+WORKED EXAMPLES
+
+1) thread_id=1x5mar3
+title: Is 23% of total sft for common spaces is a usual thing in gated community?
+body: I'm a first time buyer ...
+expected:
+{"area":[],"topic":{"value":"Area measurement","quote":"23% of total sft for common spaces"},"persona":{"value":"First-time buyer","quote":"I'm a first time buyer","basis":"stated"},"stage":{"value":"none","quote":null},"promo":{"value":"No","quote":null}}
+(merge will set area to "Hyderabad (general)")
+
+2) thread_id=1x5lphq
+title: Bought a resale flat in a gated community? What did your society charge for the transfer?
+notes: buyer peer Q&A; a commenter mentions Kothaguda Kondapur
+expected:
+{"area":[{"name":"Kothaguda","quote":"kothaguda","reason":"named in a comment"},{"name":"Kondapur","quote":"Kondapur","reason":"named in a comment"}],"topic":{"value":"Charges","quote":"charge for the transfer","reason":"asks about transfer charges"},"persona":{"value":"none","quote":null,"basis":null,"reason":null},"stage":{"value":"none","quote":null,"reason":null},"promo":{"value":"No","quote":null,"reason":"buyer Q&A, not a product pitch"}}
+
+3) thread_id=1x5hd59
+title: Home loan advice for resale flat
+body: my first home (resale)... seller wants a 20% token... offered 5L token
+expected:
+{"area":[],"topic":{"value":"Loan","quote":"Home loan advice for resale flat"},"persona":{"value":"First-time buyer","quote":"my first home (resale)","basis":"stated"},"stage":{"value":"Ready to book","quote":"offered the seller a 5L token"},"promo":{"value":"No","quote":null}}
+
+4) thread_id=1x5ifq7
+title: I cleaned ~25,000 Hyderabad flat listings... what moves the asking price
+notes: author links own tool
+expected:
+{"area":[],"topic":{"value":"Price","quote":"asking price"},"persona":{"value":"none","quote":null,"basis":null},"stage":{"value":"none","quote":null},"promo":{"value":"Yes","quote":"own tool or linked site quote"}}
+
+When a person corrects a row, append it here as a new example.

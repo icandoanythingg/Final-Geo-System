@@ -1,0 +1,231 @@
+housing_words:
+  - flat
+  - apartment
+  - bhk
+  - resale
+  - builder
+  - rera
+  - emi
+  - home loan
+  - possession
+  - society
+  - registration
+  - maintenance
+  - project
+  - sft
+  - carpet area
+  - gated community
+  - token
+  - brokerage
+  - transfer charges
+  - maintenance corpus
+  - registration
+  - stamp duty
+  - membership
+  - brokerage
+  - gst
+  - hidden charges
+  - transfer charges
+  - noc
+  - East-facing 
+  - West-facing
+  - North-facing
+  - South-facing
+  - East-facing
+  - West-facing
+  - North-facing
+  - South-facing
+  - East-facing
+  - West-facing
+
+areas:
+  Hyderabad:
+    - hyderabad
+    - hyd
+  West Hyderabad:
+    - west hyderabad
+    - west hyd
+  Financial District:
+    - financial district
+    - fin district
+    - nanakramguda
+  Kukatpally:
+    - kukatpally
+    - kphb
+  Pocharam:
+    - pocharam
+  Uppal:
+    - uppal
+  Gachibowli:
+    - gachibowli
+    - gachi bowli
+  Kokapet:
+    - kokapet
+    - kokapeta
+  Narsingi:
+    - narsingi
+  Neopolis:
+    - neopolis
+    - neo polis
+  Kondapur:
+    - kondapur
+  Madhapur:
+    - madhapur
+  HITEC City:
+    - hitec city
+    - hitech city
+    - hi-tech city
+  Miyapur:
+    - miyapur
+  Tellapur:
+    - tellapur
+  Manikonda:
+    - manikonda
+  Kothaguda:
+    - kothaguda
+  Sainikpuri:
+    - sainikpuri
+  Bachupally:
+    - bachupally
+  Nizampet:
+    - nizampet
+  Kompally:
+    - kompally
+  Shamshabad:
+    - shamshabad
+
+topics:
+  Charges:
+    - hidden charges
+    - transfer charges
+    - noc
+    - maintenance corpus
+    - registration
+    - stamp duty
+    - membership
+    - brokerage
+    - gst
+  Area measurement:
+    - carpet area
+    - built-up
+    - super built-up
+    - sft
+    - sq ft
+    - common area
+  Resale:
+    - resale
+    - second hand
+    - bank auction
+    - seized
+  Loan:
+    - loan
+    - emi
+    - down payment
+    - token
+    - disburse
+    - top-up
+  Price:
+    - price
+    - rate per sft
+    - asking price
+    - appreciation
+  Possession delay:
+    - delay
+    - possession
+    - rera
+  Builder trust:
+    - builder
+    - reputation
+    - track record
+    - brand
+  Legal and documents:
+    - sale deed
+    - agreement
+    - lawyer
+    - title
+    - encumbrance
+    - ec
+    - lod
+    - noc
+  Rental yield:
+    - rental yield
+    - rent
+    - roi
+  Location and commute:
+    - commute
+    - metro
+    - orr
+    - connectivity
+  Schools and hospitals:
+    - school
+    - hospital
+  Waterlogging and traffic:
+    - waterlogging
+    - flooding
+    - traffic
+  Other: []
+
+personas:
+  First-time buyer:
+    - first time buyer
+    - first home
+    - first flat
+  Resale buyer:
+    - buying a resale
+    - second hand flat
+  NRI:
+    - nri
+    - abroad
+    - settled in us
+    - dubai
+  Investor:
+    - invest
+    - rental yield
+    - roi
+  Family with kids:
+    - my kids
+    - my son
+    - my daughter
+    - school
+  Upgrader:
+    - upgrade
+    - sell my flat and buy
+  Buying for parents:
+    - for my parents
+  Senior or retiree:
+    - retired
+    - retiree
+    - senior citizen
+  Relocating from another city:
+    - relocating
+    - moving from bangalore
+    - moving from mumbai
+    - moving from pune
+  Luxury buyer:
+    - luxury
+    - premium
+    - ultra
+
+stages:
+  Just starting:
+    - planning to buy
+    - where to start
+  Shortlisted:
+    - shortlisted
+  Comparing:
+    - vs
+    - which one
+    - comparing
+  Ready to book:
+    - token
+    - booking amount
+    - about to book
+    - agreement
+  Booked:
+    - booked
+    - paid
+    - builder is delaying
+  Post-purchase:
+    - already bought
+    - registered
+    - after possession

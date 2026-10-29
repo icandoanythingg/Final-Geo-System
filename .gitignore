@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+project.env
+data/llm_cache.jsonl
+*.pyc
